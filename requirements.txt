@@ -1,5 +1,9 @@
-flask
-pandas
-openpyxl
-pymongo
-werkzeug
+Flask==3.1.2
+Flask-PyMongo==2.3.0
+Flask-Cors==4.0.1
+pandas==2.3.3
+openpyxl==3.1.5
+pymongo==4.15.3
+gunicorn==23.0.0
+apscheduler==3.10.4
+scikit-learn==1.5.2
