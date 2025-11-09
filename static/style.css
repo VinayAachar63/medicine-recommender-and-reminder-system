@@ -1,0 +1,164 @@
+/* ========== Global Styles ========== */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ========== Glassmorphic Container ========== */
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 40px 35px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+  color: #2b2b2b;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container:hover {
+  transform: translateY(-8px);
+}
+
+/* ========== Title Styles ========== */
+h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #2b6cb0, #805ad5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+h3 {
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ========== Input and Select Fields ========== */
+input,
+select {
+  width: 100%;
+  padding: 14px 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
+  color: #2b2b2b;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4a90e2;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+}
+
+/* ========== Buttons ========== */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ========== Result Box ========== */
+#result {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.6s ease forwards;
+  color: #2b2b2b;
+}
+
+#result h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#result ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+#result li {
+  margin-bottom: 8px;
+  list-style-type: "💊 ";
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ========== Error Message ========== */
+.error {
+  color: #e53e3e;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ========== Subtle Animations ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
